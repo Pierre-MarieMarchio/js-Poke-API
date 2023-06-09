@@ -5,26 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Poke-API</title>
 
-    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/animation.css" />
   </head>
   <body>
     <h1>Welcome to the Pokedex !</h1>
 
     <form class="search-pokemon">
-      <label for="search"> Find Your Pokemon</label>
-      <input
-        type="text"
-        class="pokemon-input"
-        placeholder="pokemon"
-        id="search"
-      />
-      <button type="submit">Find</button>
+      <label for="search">Find Your Pokemon</label>
+      <input type="text" class="pokemon-input" id="search" />
+      <button class="pokemon-submit-btn" type="submit">Find</button>
     </form>
 
     <div class="container">
       <ul class="poke-list"></ul>
     </div>
 
+    <script src="./scripts/Utility/animation.js"></script>
     <script src="./scripts/app.js"></script>
   </body>
 </html>

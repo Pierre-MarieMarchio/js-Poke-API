@@ -1,0 +1,6 @@
+.search-pokemon:focus-within label,
+.search-pokemon.activ-input label {
+  top: -15px;
+  padding-left: 5px;
+  color: #f1f1f1;
+}
