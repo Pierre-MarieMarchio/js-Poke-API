@@ -1,3 +1,7 @@
 import { fetchPokemon } from "./Utility/fetchRequest.js";
 
-fetchPokemon();
+let allPokemonsArray = [];
+let finalPokemonsArray = [];
+
+fetchPokemon(allPokemonsArray, finalPokemonsArray);
+
