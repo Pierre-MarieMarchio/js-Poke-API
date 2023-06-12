@@ -49,38 +49,8 @@ h1 {
   padding: 15px;
 }
 
-/* pokemons cards */
-
-.container {
-  width: 70%;
-  max-width: 1100px;
-  height: auto;
-  margin: 0 auto;
-}
-
-ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.poke-list li {
-  width: 250px;
-  height: auto;
-  padding: 15px;
-  margin: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.poke-list h5 {
-  font-size: 19px;
-}
-
-.poke-list p {
-  font-size: 18px;
-}
+/* .search-pokemon:focus-within label {
+  top: -15px;
+  padding-left: 5px;
+  color: #f1f1f1;
+} */

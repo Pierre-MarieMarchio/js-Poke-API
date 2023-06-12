@@ -1,3 +1,4 @@
+
 const pokeList = document.querySelector(".poke-list");
 
 const types = {
@@ -39,7 +40,5 @@ export function createCard(array) {
     card.appendChild(id_card);
 
     pokeList.appendChild(card);
-
-    console.log("card created");
   }
 }

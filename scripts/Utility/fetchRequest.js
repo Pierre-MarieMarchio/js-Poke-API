@@ -1,6 +1,16 @@
-import { createCard } from "../scripts/createCard.js";
+import { createCard } from "./cardCreation.js";
 
-export function fetchAllPokemon(pokemon, allPokemonsArray, finalPokemonsArray) {
+export function fetchPokemon(allPokemonsArray, finalPokemonsArray) {
+  fetch("https://pokeapi.co/api/v2/pokemon?limit=151")
+    .then((response) => response.json())
+    .then((data) => {
+      data.results.forEach((pokemon) => {
+        fetchPokemonAll(pokemon, allPokemonsArray, finalPokemonsArray);
+      });
+    });
+}
+
+function fetchPokemonAll(pokemon, allPokemonsArray, finalPokemonsArray) {
   // on créé un objet qui contient les informations du pokemon
 
   let pokemonFull = {};
@@ -34,7 +44,7 @@ export function fetchAllPokemon(pokemon, allPokemonsArray, finalPokemonsArray) {
             return a.id - b.id;
           })
           .slice(0, 21);
-        createCard(finalPokemonsArray);
+        createCard(allPokemonsArray);
       }
     });
 }
