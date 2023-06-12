@@ -5,6 +5,7 @@ import { scroll } from "./scripts/scroll.js";
 let allPokemonsArray = [];
 let finalPokemonsArray = [];
 
+
 fetchPokemon(allPokemonsArray, finalPokemonsArray);
 scroll(allPokemonsArray);
 searchAnimation();
