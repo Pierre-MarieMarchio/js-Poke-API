@@ -1,5 +1,7 @@
 import { createCard } from "../scripts/createCard.js";
 
+const loader = document.querySelector(".loader"); 
+
 export function fetchAllPokemon(pokemon, allPokemonsArray, finalPokemonsArray) {
   // on créé un objet qui contient les informations du pokemon
 
@@ -35,6 +37,7 @@ export function fetchAllPokemon(pokemon, allPokemonsArray, finalPokemonsArray) {
           })
           .slice(0, 21);
         createCard(finalPokemonsArray);
+        loader.style.display = "none";
       }
     });
 }
