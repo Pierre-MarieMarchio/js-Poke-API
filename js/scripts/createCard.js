@@ -25,6 +25,8 @@ export function createCard(array) {
     const card = document.createElement("li");
 
     //    créé les informations du pokemon pour la carte
+
+    
     let color = types[array[i].type];
     card.style.backgroundColor = color;
     const txt_card = document.createElement("h5");
