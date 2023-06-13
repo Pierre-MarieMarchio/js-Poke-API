@@ -4,6 +4,7 @@ const types = {
   grass: "#78c850",
   ground: "#E2BF65",
   dragon: "#6F35FC",
+  dark: "#735a4a",
   fire: "#F58271",
   electric: "#F7D02C",
   fairy: "#D685AD",
@@ -17,6 +18,7 @@ const types = {
   rock: "#B6A136",
   ghost: "#735797",
   ice: "#96D9D6",
+  steel : "#adadc6",
 };
 
 export function createCard(array) {
