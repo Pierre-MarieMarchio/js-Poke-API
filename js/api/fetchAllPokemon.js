@@ -18,7 +18,7 @@ export function fetchAllPokemon(pokemon, allPokemonsArray, finalPokemonsArray) {
       pokemonFull.name = pokeData.name;
       pokemonFull.type = pokeData.types[0].type.name;
       pokemonFull.id = pokeData.id;
-
+      
       // on push lobject dans le tableau allPokemonsArray
       allPokemonsArray.push(pokemonFull);
 
@@ -38,3 +38,4 @@ export function fetchAllPokemon(pokemon, allPokemonsArray, finalPokemonsArray) {
       }
     });
 }
+

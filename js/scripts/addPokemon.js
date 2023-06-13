@@ -11,3 +11,4 @@ export function addPokemon(nb, allPokemonsArray) {
   createCard(arrayToAdd);
   index += nb;
 }
+
